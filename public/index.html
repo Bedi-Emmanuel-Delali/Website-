@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toppily-style AI Agency Platform</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <strong>AgentHub</strong>
+        <div>
+          <a href="#features">Features</a>
+          <a href="#order">Order</a>
+          <a href="/login">Admin Login</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Build and scale with AI-powered growth tools</h1>
+      <p>Discover productized AI services, submit implementation orders, and let the admin team manage your onboarding, delivery, and feature roadmap from one portal.</p>
+    </section>
+
+    <section id="features">
+      <h2 class="section-title">Available Features</h2>
+      <div id="featuresGrid" class="grid features"></div>
+    </section>
+
+    <section id="order" class="form-wrap">
+      <h2 class="section-title">Submit an Order</h2>
+      <form id="orderForm">
+        <input type="text" name="clientName" placeholder="Your full name" required />
+        <input type="email" name="clientEmail" placeholder="Your email" required />
+        <input type="text" name="companyName" placeholder="Company name (optional)" />
+        <select name="featureId" id="featureSelect" required></select>
+        <textarea name="details" rows="4" placeholder="Tell us what you need"></textarea>
+        <button type="submit">Place Order</button>
+      </form>
+      <p id="orderStatus" class="notice small" style="display:none;"></p>
+    </section>
+  </main>
+
+  <script src="/main.js"></script>
+</body>
+</html>
