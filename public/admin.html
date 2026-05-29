@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <strong>AgentHub Admin</strong>
+        <div>
+          <a href="/">Back to Site</a>
+          <button id="logoutBtn" class="secondary">Logout</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:1.5rem 0 2rem;">
+    <h1>Admin Control Center</h1>
+    <div id="dashboard" class="dashboard"></div>
+
+    <section>
+      <h2 class="section-title">Add New Feature</h2>
+      <form id="featureForm">
+        <input type="text" name="name" placeholder="Feature name" required />
+        <textarea name="description" rows="3" placeholder="Description" required></textarea>
+        <input type="number" min="0" name="price" placeholder="Price (USD)" required />
+        <button type="submit">Add Feature</button>
+      </form>
+      <p id="featureStatus" class="notice small" style="display:none;"></p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Manage Features</h2>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>Name</th><th>Description</th><th>Price</th><th>Action</th></tr></thead><tbody id="featuresBody"></tbody></table></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Manage Orders</h2>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>Client</th><th>Feature</th><th>Status</th><th>Details</th><th>Update</th></tr></thead><tbody id="ordersBody"></tbody></table></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Clients</h2>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Company</th></tr></thead><tbody id="clientsBody"></tbody></table></div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

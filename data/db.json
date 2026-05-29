@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "bediemmanuel456@gmail.com",
+      "passwordHash": "$2b$10$X8mo.AqBKicOzEiPEDJFIOqdSlySNECRj8IuU2y14WQukTDTunoCy",
+      "role": "admin",
+      "createdAt": "2026-05-29T19:47:33.027Z"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "AI Website Assistant",
+      "description": "Embed an AI assistant that helps visitors and captures leads.",
+      "price": 299,
+      "createdAt": "2026-05-29T19:47:32.930Z"
+    },
+    {
+      "id": 2,
+      "name": "Lead Automation Suite",
+      "description": "Automatically qualify and route leads to your team in real time.",
+      "price": 399,
+      "createdAt": "2026-05-29T19:47:32.930Z"
+    },
+    {
+      "id": 3,
+      "name": "Analytics Dashboard",
+      "description": "Track engagement, conversion and support trends in one place.",
+      "price": 199,
+      "createdAt": "2026-05-29T19:47:32.930Z"
+    }
+  ],
+  "clients": [],
+  "orders": []
+}
